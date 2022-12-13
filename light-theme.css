@@ -1,0 +1,7 @@
+:root {
+    --list-bg: hsl(0, 0%, 98%);
+    --main-bg: hsl(236, 33%, 92%);
+    --text: hsl(235, 19%, 35%);
+    --footer-text: hsl(236, 9%, 61%);
+    --border: hsl(233, 11%, 84%);
+}

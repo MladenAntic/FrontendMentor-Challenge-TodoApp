@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" id="toggle-theme" href="" />
+  </head>
+  <body>
+    <img
+      src="images/bg-desktop-dark.jpg"
+      class="bg-desktop-dark bg-image-style"
+      alt="Bg Desktop Dark"
+    />
+    <img
+      src="images/bg-mobile-dark.jpg"
+      class="bg-mobile-dark bg-image-style"
+      alt="Bg Mobile Dark"
+    />
+    <section id="container">
+      <header class="todo-header">
+        <div class="toggle-theme">
+          <h1 class="logo">Todo</h1>
+          <img
+            src="images/icon-sun.svg"
+            class="icon-sun icon"
+            data-mode="light"
+            alt="Icon Sun"
+          />
+          <img
+            src="images/icon-moon.svg"
+            class="icon-moon icon"
+            data-mode="dark"
+            alt="Icon Moon"
+          />
+        </div>
+
+        <div class="create-todo">
+          <div class="radio"></div>
+          <div class="radio-active add-radio-bg">
+            <img
+              src="images/icon-check.svg"
+              class="icon-check"
+              alt="Icon Check"
+            />
+          </div>
+          <input
+            type="text"
+            class="add-todo"
+            placeholder="Create a new todo..."
+          />
+        </div>
+      </header>
+
+      <main class="todos-list">
+        <ul class="todos">
+          <li class="todo-item">
+            <div class="radio"></div>
+            <div class="radio-active add-radio-bg">
+              <img
+                src="images/icon-check.svg"
+                class="icon-check"
+                alt="Icon Check"
+              />
+            </div>
+            <p class="todo">Complete online Javascript course</p>
+            <img
+              src="images/icon-cross.svg"
+              class="icon-cross"
+              alt="Icon Cross"
+            />
+          </li>
+          <li class="todo-item">
+            <div class="radio"></div>
+            <div class="radio-active add-radio-bg">
+              <img
+                src="images/icon-check.svg"
+                class="icon-check"
+                alt="Icon Check"
+              />
+            </div>
+            <p class="todo">Jog around the park 3x</p>
+            <img
+              src="images/icon-cross.svg"
+              class="icon-cross"
+              alt="Icon Cross"
+            />
+          </li>
+          <li class="todo-item">
+            <div class="radio"></div>
+            <div class="radio-active add-radio-bg">
+              <img
+                src="images/icon-check.svg"
+                class="icon-check"
+                alt="Icon Check"
+              />
+            </div>
+            <p class="todo">10 minutes meditation</p>
+            <img
+              src="images/icon-cross.svg"
+              class="icon-cross"
+              alt="Icon Cross"
+            />
+          </li>
+          <li class="todo-item">
+            <div class="radio"></div>
+            <div class="radio-active add-radio-bg">
+              <img
+                src="images/icon-check.svg"
+                class="icon-check"
+                alt="Icon Check"
+              />
+            </div>
+            <p class="todo">Read for 1 hour</p>
+            <img
+              src="images/icon-cross.svg"
+              class="icon-cross"
+              alt="Icon Cross"
+            />
+          </li>
+          <li class="todo-item">
+            <div class="radio"></div>
+            <div class="radio-active add-radio-bg">
+              <img
+                src="images/icon-check.svg"
+                class="icon-check"
+                alt="Icon Check"
+              />
+            </div>
+            <p class="todo">Pick up groceries</p>
+            <img
+              src="images/icon-cross.svg"
+              class="icon-cross"
+              alt="Icon Cross"
+            />
+          </li>
+          <li class="todo-item">
+            <div class="radio"></div>
+            <div class="radio-active add-radio-bg">
+              <img
+                src="images/icon-check.svg"
+                class="icon-check"
+                alt="Icon Check"
+              />
+            </div>
+            <p class="todo">Complete Todo App on Frontend Mentor</p>
+            <img
+              src="images/icon-cross.svg"
+              class="icon-cross"
+              alt="Icon Cross"
+            />
+          </li>
+        </ul>
+        <div class="list-footer">
+          <small class="items-left">5 items left</small>
+          <ul class="toggle-todos-state">
+            <li class="state active">All</li>
+            <li class="state">Active</li>
+            <li class="state">Completed</li>
+          </ul>
+          <small class="clear-completed">Clear Completed</small>
+        </div>
+        <ul class="toggle-todos-state toggle-state-mobile">
+          <li class="state active">All</li>
+          <li class="state">Active</li>
+          <li class="state">Completed</li>
+        </ul>
+      </main>
+
+      <footer class="todo-footer">
+        <p class="message">Drag and drop to reorder list</p>
+      </footer>
+    </section>
+    <script src="Sortable.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
